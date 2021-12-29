@@ -1409,6 +1409,22 @@
 
 
 $(document).ready(function(){    
+    $("body").append('<div class="modal fade def-style" id="croppieModal" tabindex="-1" role="dialog" aria-labelledby="croppieModal" aria-hidden="true">'+
+    '<div class="modal-dialog">'+
+        '<div class="modal-content">'+
+            '<b class="mb-20">Set Image</b>'+
+            '<div class="modal-body">'+
+                '<div id="upload-image"></div>'+
+                '<input type="file" id="box-image" accept="image/*">'+
+                '<button id="cancel_pic" class="btn btn-danger txt-white">Cancel</button>'+
+                '<button id="select_pic" class="btn btn-primary txt-white">Change</button>'+
+                '<button id="set_pic" class="btn btn-success txt-white">Update</button>'+
+            '</div>'+
+        '</div>'+
+    '</div>'+
+'</div>');
+
+
 	$image_crop = $('#upload-image').croppie({
 		enableExif: true,
 		viewport: {
